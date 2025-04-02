@@ -44,8 +44,12 @@ Org 2: Configuring Named Credentials & External Credentials
     Click Save
 6. Create a Named Credential and link it to the External Credential.
 
-Screenshot 1: External Creadentil
+Screenshot 1: External Credentials
 ![image](https://github.com/user-attachments/assets/02273e26-079f-4ceb-8fa2-dcf5ba2d36b0)
+
+Screenshot 1: Named Credentials
+![image](https://github.com/user-attachments/assets/2842e7c6-d5b8-4f7c-aa7d-4b8366dbf709)
+
 
 Org 2: Implementing API Calls in Apex
 Create an Apex class to make API requests using the Named Credential.
