@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Account List">
+        <template if:true={accounts}>
+            <ul>
+                <template for:each={accounts} for:item="acc" for:index="index">
+                    <li key={acc.Name}>{acc.Name}</li>
+                </template>
+            </ul>
+        </template>
+        <template if:true={error}>
+            <p>{error}</p>
+        </template>
+    </lightning-card>
+</template>
+
+import { LightningElement, track, wire } from 'lwc';
+import getAccounts from '@salesforce/apex/Gettingotherorgdatascontrollerclass.Gettingotherorgdatascontrollerclass';
+export default class OrgConnectAPILwc extends LightningElement {
+
+    @track accounts = [];
+    @track error;
+
+    connectedCallback() {
+         getAccounts().then((response) => {
+                    console.log("###Response: " + response);
+                    let parsedData = JSON.parse(response);
+                    console.log('variable:', parsedData.records.map(acc => ({ Name: acc.Name })));
+                    this.accounts = parsedData.records.map(acc => ({ Name: acc.Name }));
+                })
+                .catch((error) => {
+                    console.log('###Error: ' + JSON.stringify(error));
+                });
+    }
+}
