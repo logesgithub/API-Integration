@@ -19,6 +19,7 @@ Org 1: Setting Up the Connected App
     Add OAuth scopes as needed (e.g., Full Access or specific permissions required).
     Copy the Consumer Key and Consumer Secret after saving.
 6. Click Save and ensure that the app is activated.
+   
 ScreenShot 1:
 ![image](https://github.com/user-attachments/assets/ba31534b-1234-420c-8fc1-8fd0f6f437f8)
 
@@ -44,6 +45,7 @@ Org 2: Configuring Named Credentials & External Credentials
     5. Click Save
 6. Create a Named Credential and link it to the External Credential.
 7. Go to profile or permission set give that external pricpal access.
+
 Screenshot 1: External Credentials
 ![image](https://github.com/user-attachments/assets/02273e26-079f-4ceb-8fa2-dcf5ba2d36b0)
 
