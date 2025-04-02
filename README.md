@@ -1,6 +1,8 @@
-API Integration: Data Transfer Between Salesforce Orgs Using Named Credentials & External Credentials
+#API Integration: 
+Data Transfer Between Salesforce Orgs Using Named Credentials & External Credentials
 
 This guide outlines the steps to integrate data transfer between two Salesforce orgs using Named Credentials and External Credentials with OAuth 2.0 authentication.
+
 Overview
 
 We will set up API integration between two Salesforce organizations:
