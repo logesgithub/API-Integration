@@ -31,19 +31,19 @@ Org 2: Configuring Named Credentials & External Credentials
 2. In the Quick Find box, search for Named Credentials.
 3. Click External Credentials → New.
 4. Fill in the details:
-    Label & Name: Example - EC_Org1
-    Authentication Protocol: OAuth 2.0
-    Authentication Flow Type: Client Credentials with Client Secret Flow
-    Identity Provider URL: https://your-domain-url/services/oauth2/token
-    Pass client credentials in request body: Checked
+    1. Label & Name: Example - EC_Org1
+    2. Authentication Protocol: OAuth 2.0
+    3. Authentication Flow Type: Client Credentials with Client Secret Flow
+    4. Identity Provider URL: https://your-domain-url/services/oauth2/token
+    5. Pass client credentials in request body: Checked
 5. Create a Principal:
-    Parameter Name: EC_Principal
-    Sequence Number: 1
-    Client ID: Paste the Consumer Key from Org 1
-    Client Secret: Paste the Consumer Secret from Org 1
-    Click Save
+    1. Parameter Name: EC_Principal
+    2. Sequence Number: 1
+    3. Client ID: Paste the Consumer Key from Org 1
+    4. Client Secret: Paste the Consumer Secret from Org 1
+    5. Click Save
 6. Create a Named Credential and link it to the External Credential.
-
+7. Go to profile or permission set give that external pricpal access.
 Screenshot 1: External Credentials
 ![image](https://github.com/user-attachments/assets/02273e26-079f-4ceb-8fa2-dcf5ba2d36b0)
 
